@@ -30,6 +30,13 @@
   font-size: 80px;
 }
 
+.Button-grp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
