@@ -1,20 +1,24 @@
 import React from 'react'
-import Button from '../../Components/Button/Button'
 import './landing.scss'
+//import Button from '../../Components/Button/Button'
+import { Link } from 'react-router-dom'
 
-const landing = () => {
+
+
+const Landing = () => {
+    
     return (
         <div className="landing-pg">
         <div className="container">
         <h1>LocalBitz</h1>
         <p>Home Cooked Food at your doorsteps!!</p>
         <div className="Button-grp"> 
-            <Button name="Login" />
-            <Button name="Register" />
+            <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
         </div>
-      </div>
-      </div>
+        </div>
+        </div>
     )
 }
 
-export default landing
+export default Landing
