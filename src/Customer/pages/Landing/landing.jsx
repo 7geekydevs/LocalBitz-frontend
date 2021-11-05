@@ -13,8 +13,8 @@ const Landing = () => {
         <h1>LocalBitz</h1>
         <p>Home Cooked Food at your doorsteps!!</p>
         <div className="Button-grp"> 
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/customers" className="btn login-btn">Customer</Link>
+            <Link to="/cooks" className="btn register-btn">Cook</Link>
         </div>
         </div>
         </div>
