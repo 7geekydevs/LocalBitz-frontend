@@ -1,18 +1,20 @@
 import './App.css';
-import { Route, Switch } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
-import landing from './pages/Landing/landing';
+import { Route } from 'react-router';
+import { BrowserRouter as Router } from 'react-router-dom';
+import landing from '../src/Customer/pages/Landing/landing'
+//import Login from './pages/Login/login';
+import Register from '../src/Customer/pages/Register/register';
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <BrowserRouter>
-      <Switch>
-        <Route path="/" component={landing}></Route>
-      </Switch>
-      </BrowserRouter>
+        <Route exact path="/" component={landing}></Route>
+        <Route exact path="/customers" component={Register}></Route>
+        {/* <Route exact path="/cooks" component={Register}></Route> */}
     </div>
+    </Router>
   );
 }
 
