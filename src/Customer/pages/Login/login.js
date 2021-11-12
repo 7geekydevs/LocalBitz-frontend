@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import '../Login/login.css'
 
 const Login = () => {
 
@@ -27,7 +29,9 @@ const Login = () => {
                     onChange={e=>setEmail(e.target.value)}/>
                 <input type="password" name="password" placeholder="Password" required="required" className="register-password"
                     onChange={e=>setPassword(e.target.value)}/>
-                <button type="submit" className="register-button" onClick={submit}>Submit</button>
+                <button type="submit" className="login-button" onClick={submit}>Submit</button>
+
+                <Link to="/customers" className="register-login">New user?</Link>
             </form>
         </div>
     )
