@@ -1,0 +1,25 @@
+.login-title {
+  padding-left: 130px;
+}
+.login-email {
+  width: 200px;
+  margin-left: 160px;
+}
+.login-password {
+  width: 200px;
+  margin-left: 160px;
+}
+.register-button {
+  width: 200px;
+  margin-left: 160px;
+}
+
+.reg-login {
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 140px;
+}
+
+.login-form {
+  margin-right: 200px;
+}
