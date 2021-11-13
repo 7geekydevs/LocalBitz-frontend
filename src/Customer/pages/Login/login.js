@@ -11,7 +11,7 @@ const Login = () => {
 
     const submit= async (e)=>{
         e.preventDefault();
-        
+
         await fetch('https://localbitz.deta.dev/customers/login', {
             headers: {'Accept': 'application/json, text/plain, */*',
                 'Content-Type' : 'application/json'},
@@ -19,7 +19,11 @@ const Login = () => {
             body: JSON.stringify({
                 email: email,
                 password: password})}
-        )}
+        )
+        .then(res => res.json())
+         window.location.href = '/cooks'
+    }
+
 
     return (
         <div className="login">
