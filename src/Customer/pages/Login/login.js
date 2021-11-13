@@ -21,7 +21,15 @@ const Login = () => {
                 password: password})}
         )
         .then(res => res.json())
-         window.location.href = '/cooks'
+        .then(res => {
+            if(res.status === 'success'){
+                localStorage.setItem('token', res.token)
+                //window.location.href = '/'
+            }
+            console.log("token:", res.token) 
+        })
+        // .then(res => res.json())
+        //  window.location.href = '/cooks'
     }
 
 
