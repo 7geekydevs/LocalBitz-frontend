@@ -5,7 +5,6 @@ import '../Login/login.css'
 
 const Login = () => {
 
-
     const[email, setEmail] = useState('')
     const[password, setPassword] = useState('') 
 
@@ -24,12 +23,11 @@ const Login = () => {
         .then(res => {
             if(res.status === 'success'){
                 localStorage.setItem('token', res.token)
-                //window.location.href = '/'
+                window.location.href = '/cooks'
             }
-            console.log("token:", res.token) 
+            //console.log("token:", res.token) 
         })
-        // .then(res => res.json())
-        //  window.location.href = '/cooks'
+         window.location.href = '/cooks'
     }
 
 
