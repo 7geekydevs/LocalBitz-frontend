@@ -1,10 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../Login/login.css'
+import './customer_login.css'
 
 const Login = () => {
-
 
     const[email, setEmail] = useState('')
     const[password, setPassword] = useState('') 
@@ -21,6 +20,13 @@ const Login = () => {
                 password: password})}
         )
         .then(res => res.json())
+        .then(res => {
+            if(res.status === 'success'){
+                localStorage.setItem('token', res.token)
+                window.location.href = '/cooks'
+            }
+            //console.log("token:", res.token) 
+        })
          window.location.href = '/cooks'
     }
 

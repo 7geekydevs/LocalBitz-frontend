@@ -1,9 +1,9 @@
 import React from 'react'
-import '../Cook_Register/cook_register.css'
+import './customer_register.css'
 import { useState } from 'react'    // useState is a hook
 import { Link } from 'react-router-dom'
 
-const Cook_reg = () => {
+const Register = () => {
 
     const[name, setName] = useState('')
     const[email, setEmail] = useState('')
@@ -14,7 +14,7 @@ const Cook_reg = () => {
     const submit= async (e)=>{
         e.preventDefault();
         
-        const response = await fetch('https://localbitz.deta.dev/cooks', {
+        const response = await fetch('https://localbitz.deta.dev/customers', {
             headers: {'Accept': 'application/json, text/plain, */*',
                 'Content-Type' : 'application/json'},
             method: 'POST',
@@ -39,12 +39,12 @@ const Cook_reg = () => {
                 onChange={e=>setEmail(e.target.value)}/>
             <input type="password" name="password" placeholder="Password" required="required" className="register-password"
                 onChange={e=>setPassword(e.target.value)}/>
-            <button type="submit" className="reg-button" onClick={submit}>Register</button>
+            <button type="submit" className="register-button" onClick={submit}>Register</button>
 
-            <Link to="cooks/login" className="register-login">Already have an account?</Link> 
+            <Link to="customers/login" className="register-login">Already have an account?</Link> 
         </form>
         </div>
     )
 }
 
-export default Cook_reg
+export default Register
