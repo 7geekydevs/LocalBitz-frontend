@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../../../Components/Navbar/Navbar'
 import { useEffect,useState } from 'react'
 import './home.scss'
+//import { Link } from 'react-router-dom'
 
 const home = () => {
 
