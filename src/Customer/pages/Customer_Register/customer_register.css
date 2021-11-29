@@ -3,7 +3,15 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+}
+
+.register-heading{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    margin-top: 0;
 }
 
 
@@ -12,7 +20,8 @@ form{
     /* justify-content: center; */
     /* align-items: center; */
     flex-direction: column;
-    
+    margin-left: 175px;
+    border-radius: 4px;
 }
 
 .register-heading{
@@ -26,7 +35,9 @@ input{
     margin-top: 10px;
     border-radius: 5px;
     height: 30px;
+    border-radius: 7px;
 }
+
 
 .register-button{
     margin:10px auto;
@@ -40,5 +51,4 @@ input{
 .register-login{
     text-align: center;
     margin-top: 10px;
-
 }
