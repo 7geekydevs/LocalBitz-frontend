@@ -32,7 +32,7 @@ const landing = () => {
             </div>
             </div>
             <div className="landing-animation">
-                <Lottie className="landing-animation" options={defaultOptions} height={350} width={400} /> 
+                <Lottie className="landing-animation" options={defaultOptions} height={700} width={700} /> 
             </div>     
         </div>
     )

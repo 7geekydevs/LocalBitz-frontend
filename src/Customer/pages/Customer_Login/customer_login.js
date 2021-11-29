@@ -33,7 +33,7 @@ const Login = () => {
         .then(res => res.json())
         .then(res => {
             if(res.status === 'success'){
-                //localStorage.setItem('token', res.token)
+                localStorage.setItem('token', res.token)
                 //sessionStorage.setItem('token', res.token)
                 //console.log(res)
                 //window.location.href = '/cooks'

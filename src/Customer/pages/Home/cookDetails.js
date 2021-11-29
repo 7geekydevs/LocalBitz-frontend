@@ -25,8 +25,9 @@ const cookDetails = () => {
             <div className="container">
             {menu.map(menu =>(
                     <div className="cookMenu">
-                   <p>{menu.name}</p>
-                   <p>{menu.price}</p>
+                   <p>Name : {menu.name}</p>
+                   <p>Price : Rs {menu.price}</p>
+                   <button className="order">Order</button>
                 </div>      
             ))}
             </div>
