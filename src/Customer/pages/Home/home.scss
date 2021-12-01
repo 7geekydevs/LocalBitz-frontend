@@ -5,6 +5,12 @@
   font-family: 'Architects Daughter', cursive;
 }
 
+.homeCookCards{
+  background-image: linear-gradient(to right top, #d4cf40, #d3d766, #d4df87, #d7e5a6, #deebc3);
+  width: 100%;
+  height:100vh;
+}
+
 h1 {
     text-align: center;
     margin:20px;
@@ -16,6 +22,7 @@ h1 {
     gap: 2em;
   }
   .card {
+    background-color: #deebc3;
     text-align: center;
     padding: 30px;
     width: 300px;
