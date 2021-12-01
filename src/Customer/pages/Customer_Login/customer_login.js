@@ -32,13 +32,15 @@ const Login = () => {
         )
         .then(res => res.json())
         .then(res => {
+            
             //save token to local storage
                 //extract _id from res and save to local storage
-                localStorage.setItem('token', res.token)      
+                localStorage.setItem('token', res.token)
+                localStorage.setItem('customer_id',res.customer._id)      
         })
         .then(res => {
             //redirect to home page
-            window.location.href = '/cooks'            
+            //window.location.href = '/cooks'            
         })
         .catch(err => console.log(err))
     }
