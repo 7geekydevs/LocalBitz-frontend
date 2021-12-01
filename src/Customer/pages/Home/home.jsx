@@ -32,7 +32,7 @@ const home = () => {
     }
 
     return (
-        <div>
+        <div className="homeCookCards">
             <Navbar/>
             <div className="pageTitle"><h1>Our Cooks</h1></div>
             <div className="item-container">

@@ -9,7 +9,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    background-image: linear-gradient(to right top, #d4cf40, #d3d766, #d4df87, #d7e5a6, #deebc3);
 }
 
 .register-heading{
