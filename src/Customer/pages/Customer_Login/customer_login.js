@@ -33,8 +33,8 @@ const Login = () => {
         .then(res => res.json())
         .then(res => {
             //save token to local storage
-                localStorage.setItem('token', res.token)
-                localStorage.setItem('customer_id', res._id)
+                //extract _id from res and save to local storage
+                localStorage.setItem('token', res.token)      
         })
         .then(res => {
             //redirect to home page
