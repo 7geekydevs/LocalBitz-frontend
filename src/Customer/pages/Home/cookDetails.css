@@ -5,14 +5,16 @@
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+     grid-template-columns: repeat(3, 1fr); 
+     
+   
 }
 
 .cookMenu{
     text-align: center;
     padding: 30px;
-    width: 200px;
+    width: 300px;
     border-radius: 5px;
     padding: 1em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -33,3 +35,41 @@
     color: white;
     cursor: pointer;
 }
+
+.add-minus-quantity input {
+  width: 6rem;
+  height: 3rem;
+  border: 0.141rem solid var(--primary-color);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: transparent;
+}
+.add-minus-quantity input:focus {
+  outline: none;
+}
+
+.add-minus-quantity input:focus {
+  outline: none;
+}
+
+.card-total button {
+  border: none;
+  font-size: 1.3rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  background-color: #349bf3;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+

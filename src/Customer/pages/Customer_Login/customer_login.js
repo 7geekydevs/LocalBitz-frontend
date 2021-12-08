@@ -40,7 +40,7 @@ const Login = () => {
         })
         .then(res => {
             //redirect to home page
-            //window.location.href = '/cooks'            
+            window.location.href = '/cooks'            
         })
         .catch(err => console.log(err))
     }

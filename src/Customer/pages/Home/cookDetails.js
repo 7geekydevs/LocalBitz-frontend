@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../../../Components/Navbar/Navbar'
 import { useEffect,useState } from 'react'
 import './cookDetails.css'
+import CookItems from '../../../Components/CookItems/CookItems'
 
 const cookDetails = () => {
 
@@ -23,13 +24,17 @@ const cookDetails = () => {
         <div>
             <Navbar />
             <div className="container">
-            {menu.map(menu =>(
-                    <div className="cookMenu">
-                   <p>Name : {menu.name}</p>
-                   <p>Price : Rs {menu.price}</p>
-                   <button className="order">Order</button>
-                </div>      
-            ))}
+            {menu.map((menu) =>{
+                return <CookItems key = {menu._id} {...menu}/>
+
+            }
+               
+                     
+            )}
+            </div>
+            <div className='card-total'>
+                <h3>Cart Total: <i className="fas fa-rupee-sign"></i><span> 500</span></h3>
+                <button>CheckOut</button>
             </div>
         </div>
     )
