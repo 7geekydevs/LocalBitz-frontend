@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React from 'react'
-import Navbar from '../../../Components/Navbar/Navbar'
-import { useEffect,useState } from 'react'
 import './cookDetails.css'
-import CookItems from '../../../Components/CookItems/CookItems'
+import ContextCart from '../../../Components/ContextCart/ContextCart';
+import { createContext } from 'react';
+import { useEffect,useState } from 'react'
+export const CartContext = createContext();
 
 const cookDetails = () => {
 
@@ -21,23 +22,13 @@ const cookDetails = () => {
 
 
     return (
-        <div>
-            <Navbar />
-            <div className="container">
-            {menu.map((menu) =>{
-                return <CookItems key = {menu._id} {...menu}/>
-
-            }
-               
-                     
-            )}
-            </div>
-            <div className='card-total'>
-                <h3>Cart Total: <i className="fas fa-rupee-sign"></i><span> 500</span></h3>
-                <button>CheckOut</button>
-            </div>
-        </div>
-    )
+        
+        <CartContext.Provider value={menu}>
+            <ContextCart/>
+        </CartContext.Provider>
+       
+        
+    );
 }
 
 export default cookDetails
