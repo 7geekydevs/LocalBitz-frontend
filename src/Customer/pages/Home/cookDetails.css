@@ -59,6 +59,12 @@
 .add-minus-quantity input:focus {
   outline: none;
 }
+.add-minus-quantity button {
+    background-color: red;
+    color: white;
+    width: 30px;
+   
+}
 
 .card-total button {
   border: none;

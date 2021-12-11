@@ -4,10 +4,13 @@ import CookItems from '../CookItems/CookItems';
 import { CartContext } from '../../Customer/pages/Home/cookDetails';
 
 
+
 const ContextCart = () => {
-
-    const menu = useContext(CartContext)
-
+    
+    const menu = useContext(CartContext);
+    // const [total, setTotal] = useState(0)
+    const total = 0;
+    
     return (
         <>
            <Navbar />
@@ -21,7 +24,7 @@ const ContextCart = () => {
             )}
             </div>
             <div className='card-total'>
-                <h3>Cart Total: <i className="fas fa-rupee-sign"></i><span> 500</span></h3>
+                <h3>Cart Total: <i className="fas fa-rupee-sign"></i><span> {total}</span></h3>
                 <button>CheckOut</button>
             </div>  
         </>
