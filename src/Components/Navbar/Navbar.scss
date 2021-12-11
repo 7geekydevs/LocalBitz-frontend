@@ -15,7 +15,13 @@
 
     .nav-brand{
         text-decoration: none;
-        color:black;
+        color:green;
+        margin-left: 15px;
+    }
+    .nav-brand span {
+        color:red;
+        padding: 0;
+        margin-right: 15px;
     }
 
     .nav-item{
